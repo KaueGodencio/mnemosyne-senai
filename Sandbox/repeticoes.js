@@ -99,8 +99,124 @@ function exercicioRep02() {
 
         let valorCalculado = num * contador;
         let mensagem = `${num} x ${contador} = ${valorCalculado}`;
+
         console.log(mensagem);
     };
 
+    alert("Os dados sao mostrados no console");
+
 }
 
+
+
+
+
+// 1️⃣ Filtrar números maiores que 10
+
+const numeros = [5, 8, 12, 15, 3, 20, 7];
+const maioresQueDez = numeros.filter(numero => numero > 10);
+console.log(maioresQueDez); // Deve retornar [12, 15, 20]
+
+//2️⃣ Filtrar nomes que começam com a letra 'A'
+
+const nomes = ["Ana", "João", "Amanda", "Carlos", "Arthur", "Beatriz"];
+const nomesComA = nomes.filter(nome => nome.startsWith("C"));
+console.log(nomesComA); // Deve retornar ["Ana", "Amanda", "Arthur"]
+
+
+//1️⃣ Buscar o nome “Amanda”
+
+const BuscaNomes = ["João", "Carlos", "Amanda", "Arthur", "Beatriz"];
+const amanda = BuscaNomes.find(nome => nome == "Amanda");
+
+console.log(amanda);
+const funcaoExemplo = pam1 => par1 == "Amanda"
+
+// Deve retornar "Amanda"
+
+
+//2️⃣ Buscar o usuário que o ID é igual a 2
+
+
+const listaDeUsuarios = [
+    { id: 1, nome: "Alice" },
+    { id: 2, nome: "Bruno" },
+    { id: 3, nome: "Carla" }
+];
+
+const usuarioEncontrado = listaDeUsuarios.find(usuario => usuario.id == 2);
+
+console.log(usuarioEncontrado);
+// Deve retornar { id: 2, nome: "Bruno" }
+
+
+
+// 4️⃣ Buscar o produto de nome “Fone de ouvido”
+
+/* const produtos = [
+    { nome: "Teclado", preco: 120 },
+    { nome: "Mouse", preco: 40 },
+    { nome: "Fone de ouvido", preco: 80 },
+    { nome: "Caderno", preco: 30 }
+
+];
+
+
+
+const produtoBuscado = produtoBuscado.find(produtos => produtos.nome == "Fone de ouvido");
+console.log(produtoBarato);  */
+
+// Deve retornar { nome: "Fone de ouvido", preco: 80 }
+
+
+//1. Pede o nome do vendedor.
+//2. Pergunta se ele é um vendedor nível I, II ou III.
+//3. Pergunta quanto o vendedor vendeu.
+
+// 1. Para os funcionários nível I:
+// 1. Se o vendedor vendeu mais de R$20.000,00 a bonificação será de 20 %.
+// 2. Se o vendedor vendeu mais de R$50.000,00 a bonificação será de 35 %.
+// 3. Se o vendedor vendeu mais de R$80.000,00 mostre um alerta “O vendedor ${NOME DO VENDEDOR }, nível I foi promovido ao nível II”.
+// 4. Se o vendedor vendeu menos de R$5.000,00 mostre um alerta “O vendedor ${NOME DO VENDEDOR }, nível I, está em risco de demissão.”
+
+/* 2. Para os funcionários nível II:
+1. Se o vendedor vendeu mais de R$90.000,00 a bonificação será de 25 %.
+    2. Se o vendedor vendeu mais de R$120.000,00 a bonificação será de 40 %.
+    3. Se o vendedor vendeu mais de R$200.000,00 mostre um alerta “O vendedor ${NOME DO VENDEDOR }, nível II, foi promovido ao nível III”.
+4. Se o vendedor vendeu menos de R$50.000,00 mostre um alerta “O vendedor ${NOME DO VENDEDOR }, nível II, está em risco de virar nível I.”
+ */
+
+/* 3. Para os funcionários nível III:
+    1. Se o vendedor vendeu mais de R$210.000,00 a bonificação será de 30%.
+    2. Se o vendedor vendeu mais de R$250.000,00 a bonificação será de 45%.
+    3. Se o vendedor vendeu mais de R$500.000,00 mostre um alerta “O vendedor ${NOME DO VENDEDOR}, nível III, virou o dono da firma!”.
+    4. Se o vendedor vendeu menos de R$100.000,00 mostre um alerta “O vendedor ${NOME DO VENDEDOR}, nível III, está em risco de virar nível II.”
+ */
+
+/* 
+    ## Observação
+
+Quando o funcionário tiver uma bonificação, você deverá exibir na tela um alerta com a seguinte mensagem:
+
+> “O vendedor ${NOME DO VENDEDOR }, nível ${NÍVEL DO VENDEDOR, deverá receber um bonificação de ${VALOR DO AUMENTO }.” */
+
+let nomeUsuario = (prompt("Ola vendedor, informe nome:"));
+let nivelVendedor = (prompt("qual seu nivel: nivel 1, 2 ou 3"));
+let valorVendido = (prompt("Quanto vendeu :"));
+
+
+
+
+if (nivelVendedor === 20000 * 0.20) {
+
+    if (nivelVendedor === 50000 * 0.35) {
+
+    }
+
+    if (nivelVendedor > 80000 * 0.) {
+        alert("Chutou baixo.");
+       
+
+    }
+
+};
